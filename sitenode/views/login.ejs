@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <script src="main.js" async></script>
+</head>
+<body>
+
+  <h1>Tela de login</h1>
+
+    <% if (messages.error) { %>
+    <%= messages.error %>
+    <% } %>
+  <form action="/login" method="POST">
+    <input type="text" placeholder="Nome" name="nome">
+    <input type="password" placeholder="Senha" name="password">
+    <button type="submit">Submit</button>
+  </form>
+
+  <a href="/registro.ejs">Registro</a>
+
+</body>
+</html>
